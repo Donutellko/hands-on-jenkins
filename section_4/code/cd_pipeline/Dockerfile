@@ -1,6 +1,8 @@
 # base image
 FROM alpine:3.7
 
+# Install tools
+RUN apt-get install lxc
 # Install python 3 and pip
 RUN apk add --update python3
 
